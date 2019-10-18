@@ -6,29 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <!-- JQUERY LINK -->
-    <script  src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href=".//assets/style.css">
 
     <title>Document</title>
 </head>
 <body>
     <h1> TRIVIA GAME</h1>
+    <p>
+        Click Play to start to game.
+    </p>
+    <button id = "run"> Play</button>
     <div id= "timeclock">
-        <p> Time Remaining: </p>
     </div>
-    <div class= "question-one">
-        <p></p>
-    </div>
-    <div class= "question-two">
-        <p></p>
-    </div>
-    <div class= "question-three">
-        <p></p>
-    </div>
+    <br>
+    <div id = "quizContainer">
+        <!-- QUESTION 1 -->
+        <form action="">
+            <div id = "questionOne"></div>
+            <input type ="radio" name ="selection" value = ""> <span class = "q1c1"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q1c2"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q1c3"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q1c4"></span><br>
+        </form>
+            <br>
+
+        <!--  QUESTION 2 -->
+        <form action="">
+            <div id = "questionTwo"></div>
+            <input type ="radio" name ="selection" value = ""> <span class = "q2c1"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q2c2"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q2c3"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q2c4"></span><br>
+        </form>
+            <br>
+
+            <!-- QUESTION 3 -->
+        <form action="">
+        <div id = "questionThree"></div>
+            <input type ="radio" name ="selection" value = ""> <span class = "q3c1"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q3c2"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q3c3"></span><br>
+            <input type ="radio" name ="selection" value = ""> <span class = "q3c4"></span><br>
+        </form>
+        </div>
+        <br>
     <!-- DONE BUTTON -->
-    <button> done </button>
+    <button id ="doneButton"> done </button>
 </body>
 <!-- LOCAL JS LINK -->
-<script src="/assets/game.js"></script>
+<script src=".//assets/game.js"></script>
 </html>
