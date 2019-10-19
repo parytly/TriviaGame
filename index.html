@@ -26,7 +26,7 @@
         <div class = "row timer">
             <div class="card border-success mb-3 " style="max-width: 18rem;">
                 <div class="card-header">Time Clock</div>
-                <div class="card-body text-success">
+                <div class="card-body text-success timeBody">
                     <h5 class="card-title" id = "timeclock"></h5>
                 </div>
             </div>
@@ -42,13 +42,13 @@
                 <form id ="choice1">
                     <label for="choice1"></label>
                     <div id = "questionOne"></div>
-                    <input type ="radio" name ="choice1" value = "godziila"> <span class = "q1c1"></span><br>
+                    <input type ="radio" name ="selection" value = "los angeles" class = "userInput1"> <span class = "q1c1"></span><br>
         
-                    <input type ="radio" name ="choice1" value = "godzilla"> <span class = "q1c2"></span><br>
+                    <input type ="radio" name ="selection" value = "paris" class = "userInput1"> <span class = "q1c2"></span><br>
         
-                    <input type ="radio" name ="choice1" value = "goku"> <span class = "q1c3"></span><br>
+                    <input type ="radio" name ="selection" value = "new york city" class = "userInput1"> <span class = "q1c3"></span><br>
         
-                    <input type ="radio" name ="choice1" value = "sam"> <span class = "q1c4"></span><br>
+                    <input type ="radio" name ="selection" value = "phoenix" class = "userInput1"> <span class = "q1c4"></span><br>
                 </form>
             </div>
         </div>
@@ -58,10 +58,10 @@
             <div class="card-body">
                 <form action="">
                     <div id = "questionTwo"></div>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q2c1"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q2c2"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q2c3"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q2c4"></span><br>
+                    <input type ="radio" name ="selection" value = "trump" class = "userInput2"> <span class = "q2c1"></span><br>
+                    <input type ="radio" name ="selection" value = "washington" class = "userInput2"> <span class = "q2c2"></span><br>
+                    <input type ="radio" name ="selection" value = "obama" class = "userInput2"> <span class = "q2c3"></span><br>
+                    <input type ="radio" name ="selection" value = "lincoln" class = "userInput2"> <span class = "q2c4"></span><br>
                 </form>
             </div>
         </div>
@@ -71,10 +71,10 @@
             <div class="card-body">
                 <form action="">
                 <div id = "questionThree"></div>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q3c1"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q3c2"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q3c3"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q3c4"></span><br>
+                    <input type ="radio" name ="selection" value = "1900" class = "userInput3"> <span class = "q3c1"></span><br>
+                    <input type ="radio" name ="selection" value = "2010" class = "userInput3"> <span class = "q3c2"></span><br>
+                    <input type ="radio" name ="selection" value = "1945" class = "userInput3"> <span class = "q3c3"></span><br>
+                    <input type ="radio" name ="selection" value = "1876" class = "userInput3"> <span class = "q3c4"></span><br>
                 </form>
             </div>
         </div>
@@ -84,10 +84,10 @@
             <div class="card-body">
                 <form action="">
                 <div id = "questionFour"></div>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q4c1"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q4c2"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q4c3"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q4c4"></span><br>
+                    <input type ="radio" name ="selection" value = "raiders" class = "userInput4"> <span class = "q4c1"></span><br>
+                    <input type ="radio" name ="selection" value = "packers" class = "userInput4"> <span class = "q4c2"></span><br>
+                    <input type ="radio" name ="selection" value = "cowboys" class = "userInput4"> <span class = "q4c3"></span><br>
+                    <input type ="radio" name ="selection" value = "lions" class = "userInput4"> <span class = "q4c4"></span><br>
                 </form>
             </div>
         </div>
@@ -97,15 +97,18 @@
             <div class="card-body">
                 <form action="">
                 <div id = "questionFive"></div>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q5c1"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q5c2"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q5c3"></span><br>
-                    <input type ="radio" name ="selection" value = ""> <span class = "q5c4"></span><br>
+                    <input type ="radio" name ="selection" value = "5.5 lbs" class = "userInput5"> <span class = "q5c1"></span><br>
+                    <input type ="radio" name ="selection" value = "1.2 lbs" class = "userInput5"> <span class = "q5c2"></span><br>
+                    <input type ="radio" name ="selection" value = "2.2 lbs" class = "userInput5"> <span class = "q5c3"></span><br>
+                    <input type ="radio" name ="selection" value = "2.5 lbs" class = "userInput5"> <span class = "q5c4"></span><br>
                 </form>
             </div>
         </div>
     </div>
     <br>
+
+<div id = "result"> </div>
+
     <!-- DONE BUTTON -->
     <button type="button" id ="doneButton" class="btn btn-primary btn-lg">Done</button>
 </body>
