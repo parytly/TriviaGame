@@ -4,57 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <!-- BOOTSTRAP LINK  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- JQUERY LINK -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href=".//assets/style.css">
 
-    <title>Document</title>
+    <title>Trivia Game</title>
 </head>
 <body>
-    <h1> TRIVIA GAME</h1>
-    <p>
-        Click Play to start to game.
-    </p>
-    <button id = "run"> Play</button>
-    <div id= "timeclock">
-    </div>
-    <br>
-    <div id = "quizContainer">
-        <!-- QUESTION 1 -->
-        <form action="">
-            <div id = "questionOne"></div>
-            <input type ="radio" name ="selection" value = ""> <span class = "q1c1"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q1c2"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q1c3"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q1c4"></span><br>
-        </form>
-            <br>
+        <div class="jumbotron">
+            <h1 class="display-4">TRIVIA QUESTION GAME</h1>
+            <p class="lead">Click Play to start to game.</p>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="#" role="button" id = "run" >PLAY</a>
+        </div>
 
-        <!--  QUESTION 2 -->
-        <form action="">
-            <div id = "questionTwo"></div>
-            <input type ="radio" name ="selection" value = ""> <span class = "q2c1"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q2c2"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q2c3"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q2c4"></span><br>
-        </form>
-            <br>
-
-            <!-- QUESTION 3 -->
-        <form action="">
-        <div id = "questionThree"></div>
-            <input type ="radio" name ="selection" value = ""> <span class = "q3c1"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q3c2"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q3c3"></span><br>
-            <input type ="radio" name ="selection" value = ""> <span class = "q3c4"></span><br>
-        </form>
+        <div class = "row timer">
+            <div class="card border-success mb-3 " style="max-width: 18rem;">
+                <div class="card-header">Time Clock</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title" id = "timeclock"></h5>
+                </div>
+            </div>
         </div>
         <br>
+
+    
+    <div id = "quizContainer">
+        
+        <!-- QUESTION 1 -->
+        <div class="card">
+            <div class="card-body">
+                <form id ="choice1">
+                    <label for="choice1"></label>
+                    <div id = "questionOne"></div>
+                    <input type ="radio" name ="choice1" value = "godziila"> <span class = "q1c1"></span><br>
+        
+                    <input type ="radio" name ="choice1" value = "godzilla"> <span class = "q1c2"></span><br>
+        
+                    <input type ="radio" name ="choice1" value = "goku"> <span class = "q1c3"></span><br>
+        
+                    <input type ="radio" name ="choice1" value = "sam"> <span class = "q1c4"></span><br>
+                </form>
+            </div>
+        </div>
+
+        <!--  QUESTION 2 -->
+        <div class="card">
+            <div class="card-body">
+                <form action="">
+                    <div id = "questionTwo"></div>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q2c1"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q2c2"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q2c3"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q2c4"></span><br>
+                </form>
+            </div>
+        </div>
+
+            <!-- QUESTION 3 -->
+        <div class="card">
+            <div class="card-body">
+                <form action="">
+                <div id = "questionThree"></div>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q3c1"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q3c2"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q3c3"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q3c4"></span><br>
+                </form>
+            </div>
+        </div>
+
+            <!-- QUESTION 4 -->
+        <div class="card">
+            <div class="card-body">
+                <form action="">
+                <div id = "questionFour"></div>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q4c1"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q4c2"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q4c3"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q4c4"></span><br>
+                </form>
+            </div>
+        </div>
+
+            <!-- QUESTION 5 -->
+        <div class="card">
+            <div class="card-body">
+                <form action="">
+                <div id = "questionFive"></div>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q5c1"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q5c2"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q5c3"></span><br>
+                    <input type ="radio" name ="selection" value = ""> <span class = "q5c4"></span><br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
     <!-- DONE BUTTON -->
-    <button id ="doneButton"> done </button>
+    <button type="button" id ="doneButton" class="btn btn-primary btn-lg">Done</button>
 </body>
 <!-- LOCAL JS LINK -->
 <script src=".//assets/game.js"></script>

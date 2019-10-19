@@ -1,0 +1,9 @@
+.timer{
+    z-index: 2;
+    position: fixed;
+    margin-left: 85%;
+}
+#timeclock{
+    font-size: 50px;
+    text-align: center;
+}

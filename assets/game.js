@@ -32,20 +32,27 @@ start();
 
 // LIST OF QUESTIONS
 var questionList = [
-{   question: "Who is the strongest?",
-    choices: ["godzilla ", "king kong ", "t-rex ", "goku "],
-    answer: "godzilla"
+{   question: "Which city is nickname, 'The Big Apple'?",
+    choices: ["Los Angeles ", "Paris ", "New York City ", "Phoenix "],
+    answer: "New York City "
 },
-{   question: "Who was the first president of the USA?",
-    choices: ["trump", "washington", "obama", "lincoln"],
+{   question: "Who was the first president of the United States of America?",
+    choices: ["Trump", "Washington", "Obama", "Lincoln"],
     anwser: "washington"
 },
-{   question: "Where is the captiol of Cailfornia?",
-    choices: ["los angeles", "sacramento", "chico", "new york"],
-    answer: "sacramento"
+{   question: "What year was the first phone invented?",
+    choices: ["1900", "2010", "1945", "1876"],
+    answer: "1876"
+},
+{   question: "Which team won the first ever NFL Superbowl?",
+    choices: ["Raiders", "Packers", "Cowboys", "lions"],
+    answer: "Packers"
+},
+{   question: "How much is 1 kilogram in a pound?",
+    choices: ["5.5 lbs", "1.2 lbs", "2.2 lbs", "2.5 lbs"],
+    answer: "2.2 lbs"
 },
 ];
-
 
 // DISPLAY QUIZ QUESTION AND CHOICES
 function displayQuiz(){
@@ -71,25 +78,39 @@ function displayQuiz(){
     $(".q3c2").append(questionList[2].choices[1]);
     $(".q3c3").append(questionList[2].choices[2]);
     $(".q3c4").append(questionList[2].choices[3]);
+    
+    // QUESTION 4
+    $("#questionFour").append(questionList[3].question);
+    $(".q4c1").append(questionList[3].choices[0]);
+    $(".q4c2").append(questionList[3].choices[1]);
+    $(".q4c3").append(questionList[3].choices[2]);
+    $(".q4c4").append(questionList[3].choices[3]);
+    
+    // QUESTION 3
+    $("#questionFive").append(questionList[4].question);
+    $(".q5c1").append(questionList[4].choices[0]);
+    $(".q5c2").append(questionList[4].choices[1]);
+    $(".q5c3").append(questionList[4].choices[2]);
+    $(".q5c4").append(questionList[4].choices[3]);
 };
     
 displayQuiz();
 
 
-
 // CHECK USERS SELECTIONS
 function checkAnswer (){
+ 
+}
 
-};
 checkAnswer();
 
-// FINISH THE GAME WHEM CLICKING ON THE DONE BUTTON
+// FINISH THE GAME WHEN CLICKING ON THE DONE BUTTON
 function finish(){
     $("#doneButton").on("click",function(){
         clearInterval(intervalId);
         console.log("finish");
-        $("#quiz").hide();
-        // $("#quiz").show(results);
+        // $("#quizContainer").hide();
+        
 
     });
 };
