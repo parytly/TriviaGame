@@ -11,4 +11,16 @@
 .timeBody{
     background-color: green;
     
-}   
+} 
+#score{
+    color: green;
+    font-size: 50px;
+} 
+#questionOne,
+#questionTwo, 
+#questionThree, 
+#questionFour, 
+#questionFive {
+    font-size: 20px;
+    font-weight: bold;
+}

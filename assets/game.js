@@ -9,22 +9,30 @@ function start() {
         intervalId = setInterval (decrement, 1000);
         console.log("starting the game")
     });
-
 function decrement(){
     timer--;
     $("#timeclock").text(timer);
     if (timer === 0){
-        // alert("Times Up!!!");
+        alert("Time's Up!!!");
         stop();
     };
 };
 decrement();
-
 function stop(){
     clearInterval(intervalId);
 };
+function restart (){
+    $("#replay").on("click", function(replay){
+        stop();
+        timer = 31;
+        $("#quizContainer").show();
+        console.log("replay the game")
+    });
+};
+restart();
 };
 start();
+
 
 // LIST OF QUESTIONS
 var questionList = [
@@ -91,7 +99,7 @@ function displayQuiz(){
 displayQuiz();
 
 var score = 0;
-
+// LOG IN THE USERS SELECTION TO MATCH THE CORRECT ANSWER
 $(".userInput1").on("click", function(event){
     var userSelection = $('input[class=userInput1]:checked').val();
     console.log(userSelection);
@@ -160,7 +168,7 @@ function finish(){
         clearInterval(intervalId);
         console.log("finish");
         $("#quizContainer").hide();
-        $("#result").append("<div> Your Score:  </div>")
+        $("#result").append("<div id = 'score'> Your Score: " + score + "/5 </div>")
     });
 };
 finish();
