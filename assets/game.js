@@ -1,6 +1,7 @@
 // TIMER
 var timer = 31;
 var intervalId;
+var score = 0;
 
 // START THE GAME
 function start() {
@@ -26,6 +27,7 @@ function restart (){
         stop();
         timer = 31;
         $("#quizContainer").show();
+        $("#result").empty();
         console.log("replay the game")
     });
 };
@@ -98,7 +100,7 @@ function displayQuiz(){
     
 displayQuiz();
 
-var score = 0;
+
 // LOG IN THE USERS SELECTION TO MATCH THE CORRECT ANSWER
 $(".userInput1").on("click", function(event){
     var userSelection = $('input[class=userInput1]:checked').val();
